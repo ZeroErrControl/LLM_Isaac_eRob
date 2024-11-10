@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{4404c240-9f3d-4bc8-84fa-e178cd1bb481}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+    (* 功能块 *)
+    axis1: AXIS_REF;    (* 轴引用 *)
+
+    (* 功能块 *)
+    MCPower : MC_Power; (* 电机上电/下电控制功能块 *)
+    MCJog   : MC_Jog;   (* 点动控制功能块 *)
+	fbMoveCyclicPosition :MC_MoveRelative;
+    fbMoveAbs      : MC_MoveAbsolute; // 定义绝对位置运动功能块
+	MC_JOG :MC_JOG;
+
+
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[(* 使用速度控制 
+
+*)
+
+MCPower(Enable := TRUE,
+		Enable_Positive := TRUE,
+		Enable_Negative := TRUE,
+		Override := 100,
+		Axis  := axis1,
+);
+// 运动到绝对位置
+
+
+//fbMoveCyclicPosition(Axis := axis1,Execute := TRUE, Distance:=3000,Velocity := 3000);
+
+
+]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="384" Count="0" />
+      <LineId Id="389" Count="0" />
+      <LineId Id="383" Count="0" />
+      <LineId Id="377" Count="0" />
+      <LineId Id="393" Count="4" />
+      <LineId Id="392" Count="0" />
+      <LineId Id="472" Count="0" />
+      <LineId Id="512" Count="0" />
+      <LineId Id="449" Count="0" />
+      <LineId Id="341" Count="0" />
+      <LineId Id="96" Count="0" />
+      <LineId Id="107" Count="0" />
+      <LineId Id="105" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

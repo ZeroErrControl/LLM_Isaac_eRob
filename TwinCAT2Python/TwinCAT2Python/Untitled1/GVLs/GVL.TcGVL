@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <GVL Name="GVL" Id="{e9d1865c-37ec-476b-802d-7bbf4ea05cea}">
+    <Declaration><![CDATA[{attribute 'qualified_only'}
+VAR_GLOBAL
+	Actual_Velocity   AT%I*   :DINT ;
+	Actual_Position   AT%I*   :DINT ;
+
+	Control_word      AT%Q*   :INT  :=  0;
+	Target_Velocity   AT%Q*   :DINT  := 0;	
+	Target_Position   AT%Q*   :DINT  := 0;
+	Operation_Mode    AT%Q*   :SINT  := 0;
+	Profile_acceleration			  AT%Q*   :DINT  := 0;
+	Profile_deceleration		      AT%Q*   :DINT  := 0;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

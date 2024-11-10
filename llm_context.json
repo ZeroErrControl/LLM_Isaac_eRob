@@ -1,0 +1,24 @@
+{
+  "conversation": [
+    {
+      "role": "Human",
+      "content": "Can you help me control eRob and choose half a turn?"
+    },
+    {
+      "role": "Human",
+      "content": "set velocity = 30000 for 20 s"
+    },
+    {
+      "role": "Human",
+      "content": "can you return position 0？"
+    },
+    {
+      "role": "Human",
+      "content": "Half turn"
+    },
+    {
+      "role": "Human",
+      "content": "Half turn"
+    }
+  ]
+}
