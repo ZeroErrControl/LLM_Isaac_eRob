@@ -58,7 +58,7 @@ Once you have successfully installed the Isaac Sim platform, navigate to the Isa
 
 <div class="Nvidia">
   <a>
-    <img src="/img/Nvidia1.png" alt="Nvidia2" style={{ width: '1000', height: 'auto' }} />
+    <img src="https://cdn-fusion.imgcdn.store/i/2024/fedd551b11a76855.png" alt="Nvidia2" style={{ width: '1000', height: 'auto' }} />
   </a>
 </div>
 
@@ -223,7 +223,7 @@ def get_model_output(prompt, conversation):
    
    <div class="Nvidia">
      <a>
-       <img src="/img/llm_erob.png" alt="llm" style={{ width: '1000', height: 'auto' }} />
+       <img src="https://cdn-fusion.imgcdn.store/i/2024/92e28dde7844ff2b.png" alt="llm" style={{ width: '1000', height: 'auto' }} />
      </a>
    </div>
    
